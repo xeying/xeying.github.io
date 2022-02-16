@@ -20,17 +20,19 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="一曲肝肠断，天涯何处觅知音。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="小松许的家">
-<meta property="og:url" content="http://example.com/archives/2022/index.html">
+  <meta name="description" content="文件系统管理常用的硬盘管理命令df命令df -ahT                         查看硬盘空间大小（需要重启释放，统计的剩余空间大小是准确的） du命令du -h                          查看目录大小（统计的文件大小是准确的） fsck文件系统修复命令fsck -y &#x2F;dev&#x2F;sdb1             自动修复 显示磁盘状态">
+<meta property="og:type" content="article">
+<meta property="og:title" content="file">
+<meta property="og:url" content="http://example.com/2022/02/16/file/index.html">
 <meta property="og:site_name" content="小松许的家">
-<meta property="og:description" content="一曲肝肠断，天涯何处觅知音。">
+<meta property="og:description" content="文件系统管理常用的硬盘管理命令df命令df -ahT                         查看硬盘空间大小（需要重启释放，统计的剩余空间大小是准确的） du命令du -h                          查看目录大小（统计的文件大小是准确的） fsck文件系统修复命令fsck -y &#x2F;dev&#x2F;sdb1             自动修复 显示磁盘状态">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-02-16T14:36:01.000Z">
+<meta property="article:modified_time" content="2022-02-16T14:50:36.393Z">
 <meta property="article:author" content="xeying">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/archives/2022/">
+<link rel="canonical" href="http://example.com/2022/02/16/file/">
 
 
 <script id="page-configurations">
@@ -38,12 +40,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>归档 | 小松许的家</title>
+  <title>file | 小松许的家</title>
   
 
 
@@ -157,150 +159,114 @@
         <div class="content-wrap">
           
 
-          <div class="content archive">
+          <div class="content post posts-expand">
             
 
+    
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共计 6 篇日志。 继续努力。</span>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/02/16/file/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+      <meta itemprop="name" content="xeying">
+      <meta itemprop="description" content="一曲肝肠断，天涯何处觅知音。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小松许的家">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          file
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-02-16 22:36:01 / 修改时间：22:50:36" itemprop="dateCreated datePublished" datetime="2022-02-16T22:36:01+08:00">2022-02-16</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%90%8E%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">后端</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2022</span>
+        <h1 id="文件系统管理"><a href="#文件系统管理" class="headerlink" title="文件系统管理"></a>文件系统管理</h1><h2 id="常用的硬盘管理命令"><a href="#常用的硬盘管理命令" class="headerlink" title="常用的硬盘管理命令"></a>常用的硬盘管理命令</h2><h3 id="df命令"><a href="#df命令" class="headerlink" title="df命令"></a>df命令</h3><p>df -ahT                         查看硬盘空间大小（需要重启释放，统计的剩余空间大小是准确的）</p>
+<h3 id="du命令"><a href="#du命令" class="headerlink" title="du命令"></a>du命令</h3><p>du -h                          查看目录大小（统计的文件大小是准确的）</p>
+<h3 id="fsck文件系统修复命令"><a href="#fsck文件系统修复命令" class="headerlink" title="fsck文件系统修复命令"></a>fsck文件系统修复命令</h3><p>fsck -y &#x2F;dev&#x2F;sdb1             自动修复</p>
+<h3 id="显示磁盘状态dumpe2fs"><a href="#显示磁盘状态dumpe2fs" class="headerlink" title="显示磁盘状态dumpe2fs"></a>显示磁盘状态dumpe2fs</h3><p><strong>centos6</strong>时用 <code>dumpe2fs</code> 命令，在 <strong>centos7</strong>时 用 <code>xfs_growfs</code>来查看文件系统信息</p>
+<h3 id="判断文件类型"><a href="#判断文件类型" class="headerlink" title="判断文件类型"></a>判断文件类型</h3><p>type     命令名                                    判断命令类型</p>
+<p>file 文件名                                判断文件类型</p>
+<h2 id="fdisk命令手工分区"><a href="#fdisk命令手工分区" class="headerlink" title="fdisk命令手工分区"></a>fdisk命令手工分区</h2><p>fdisk -l                        查看系统所有硬盘及分区</p>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+    
+    
+    
+        
 
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-02-16T22:53:03+08:00"
-              content="2022-02-16">
-          02-16
-        </time>
-      </div>
+  <div class="followme">
+    <p>欢迎关注我的其它发布渠道</p>
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/02/16/test/" itemprop="url">
-            <span itemprop="name">test</span>
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
           </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-02-16T22:37:34+08:00"
-              content="2022-02-16">
-          02-16
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/02/16/software/" itemprop="url">
-            <span itemprop="name">software</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-02-16T22:37:14+08:00"
-              content="2022-02-16">
-          02-16
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/02/16/user/" itemprop="url">
-            <span itemprop="name">user</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-02-16T22:36:18+08:00"
-              content="2022-02-16">
-          02-16
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/02/16/permission/" itemprop="url">
-            <span itemprop="name">permission</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-02-16T22:36:01+08:00"
-              content="2022-02-16">
-          02-16
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/02/16/file/" itemprop="url">
-            <span itemprop="name">file</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-02-16T22:33:25+08:00"
-              content="2022-02-16">
-          02-16
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/02/16/vim/" itemprop="url">
-            <span itemprop="name">vim</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-
+        </div>
     </div>
   </div>
-  
-  
-  
 
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/02/16/vim/" rel="prev" title="vim">
+      <i class="fa fa-chevron-left"></i> vim
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2022/02/16/permission/" rel="next" title="permission">
+      permission <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
   
 
 
@@ -353,6 +319,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86"><span class="nav-number">1.</span> <span class="nav-text">文件系统管理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B8%B8%E7%94%A8%E7%9A%84%E7%A1%AC%E7%9B%98%E7%AE%A1%E7%90%86%E5%91%BD%E4%BB%A4"><span class="nav-number">1.1.</span> <span class="nav-text">常用的硬盘管理命令</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#df%E5%91%BD%E4%BB%A4"><span class="nav-number">1.1.1.</span> <span class="nav-text">df命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#du%E5%91%BD%E4%BB%A4"><span class="nav-number">1.1.2.</span> <span class="nav-text">du命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#fsck%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E4%BF%AE%E5%A4%8D%E5%91%BD%E4%BB%A4"><span class="nav-number">1.1.3.</span> <span class="nav-text">fsck文件系统修复命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%98%BE%E7%A4%BA%E7%A3%81%E7%9B%98%E7%8A%B6%E6%80%81dumpe2fs"><span class="nav-number">1.1.4.</span> <span class="nav-text">显示磁盘状态dumpe2fs</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%A4%E6%96%AD%E6%96%87%E4%BB%B6%E7%B1%BB%E5%9E%8B"><span class="nav-number">1.1.5.</span> <span class="nav-text">判断文件类型</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#fdisk%E5%91%BD%E4%BB%A4%E6%89%8B%E5%B7%A5%E5%88%86%E5%8C%BA"><span class="nav-number">1.2.</span> <span class="nav-text">fdisk命令手工分区</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
